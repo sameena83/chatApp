@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import Nav from './Nav';
+import MovieList from './MovieList';
+import { MovieProvider } from './MovieContext';
 
 const  App=() =>{
   return (
+    <MovieProvider>
     <div>
-      <h1>App</h1>
+      <Nav/>
+    <MovieList/>
     </div>
+    </MovieProvider>
   );
 }
 

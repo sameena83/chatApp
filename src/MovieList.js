@@ -1,12 +1,13 @@
-import React ,{useState} from 'react'
+import React ,{useState,useContext} from 'react';
+import Movie from './Movie';
+import { MovieContext } from './MovieContext';
 
 const MovieList = () => {
-    const[movies,setMovies]=useState([
-
-    ]);
+    const value=useContext(MovieContext);
+    
     return (
         <div>
-            
+           <h1> {value}</h1>
         </div>
     )
 }
